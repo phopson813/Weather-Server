@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terre Haute Sensor Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Terre Haute Sensor Dashboard</h1>
+
+    <div id="sidenav" class="nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://cs.indstate.edu/~phopson1@isuad.indstate.edu/mainpage.html">More Pages</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Menu</span>
+
+    <div class="row">
+        <div class = "card" >
+            <h2> Current Temperature </h2>
+            <p id="temp"> Loading... </p>
+        </div>
+        <div class = "card">
+            <h2> Humidity </h2>
+            <p id="humidity"> Loading...</p>
+        </div>
+        <div class = "card">
+            <h2> Latest Readings </h2>
+            <p id="time">Loading...</p>
+        </div>
+        <div class = "card" >
+            <h2> Record Temperature High </h2>
+            <p id="maxtemp"> Loading...</p>
+            <p id="maxtemptime"> loading... </p>
+        </div>
+        <div class = "card">
+            <h2> Record Temperature Low </h2>
+            <p id="mintemp"> Loading...</p>
+            <p id="mintemptime"> loading... </p>
+        </div>
+        <div class = "card">
+            <h2> Record Humidity High </h2>
+            <p id="maxhumidity">Loading...</p>
+            <p id="maxhumiditytime">Loading...</p>
+        </div>
+        <div class = "card">
+            <h2> Record Humidity Low </h2>
+            <p id="minhumidity">Loading...</p>
+            <p id="minhumiditytime">Loading...</p>
+        </div>
+    </div>
+
+    <div class="graph-row">
+        <div class="card">
+            <h3>Today's Temperature</h3>
+            <div id="dayPlot" style="height:400px;"></div>
+        </div>
+        <div class="card">
+            <h3>This Month's Temperature</h3>
+            <div id="monthPlot" style="height:400px;"></div>
+        </div>
+    </div>
+
+    <div class ="card">
+        <div id="calendar" ></div>
+        <div id="calendarplot"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+
+</body>
+</html>

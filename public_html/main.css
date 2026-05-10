@@ -1,0 +1,156 @@
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+#temp, #humidity, #time,
+#maxtemp, #mintemp,
+#maxhumidity, #minhumidity {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 5px 0;
+    color: #0f172a;
+}
+
+#maxtemptime, #mintemptime,
+#maxhumiditytime, #minhumiditytime {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+input {
+    padding: 8px;
+    margin: 6px 4px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    font-size: 0.9rem;
+}
+
+button {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#dayPlot, #monthPlot, #calendarplot {
+    margin-top: 10px;
+}
+
+#calendar {
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: inset 0 0 0 1px #e2e8f0;
+}
+
+.readings {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.graph-row {
+    display: flex;
+    gap: 20px;
+}
+
+.graph-row .card{
+    flex: 1;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+
+.nav a {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0f172a;
+    display: block;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    background: #f1f5f9;
+    color: #2563eb;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
