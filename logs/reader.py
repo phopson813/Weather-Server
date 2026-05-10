@@ -6,7 +6,7 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 LOG_FILE = os.path.join(BASE_DIR, 'sensor_log_fixed.txt')
 DB_FILE = os.path.join(BASE_DIR, 'newdb.db')
-JSON_FILE = "/home/phopson1@isuad.indstate.edu/public_html/sensor.json"
+JSON_FILE = "public_html/sensor.json"
 
 # Connect to SQLite DB
 conn = sqlite3.connect(DB_FILE)
