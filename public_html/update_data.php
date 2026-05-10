@@ -1,6 +1,6 @@
 <?php
 
-$allowed_ip = '76.181.50.211';
+$allowed_ip = 'IP_ADDRESS';
 
 if ($_SERVER['REMOTE_ADDR'] !== $allowed_ip) {
         http_response_code(403);
