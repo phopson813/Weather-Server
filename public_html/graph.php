@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 try {
-    $db = new PDO('sqlite:/home/phopson1@isuad.indstate.edu/logs/newdb.db');
+    $db = new PDO('newdb.db');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $range = isset($_GET['range']) ? $_GET['range'] : "day";
